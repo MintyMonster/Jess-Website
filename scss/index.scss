@@ -9,6 +9,11 @@ $font-primary: 'Roboto', sans-serif;
 
 /* Navbar */
 
+.place-content-center {
+    display: grid;
+    place-content: center;
+}
+
 .logo {
     width: 5rem;
     height: 5rem;
@@ -17,8 +22,11 @@ $font-primary: 'Roboto', sans-serif;
 
 .navbar-container {
     margin-top: 2rem;
-    /*position: absolute;*/
-    background-color: aqua;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navbar {    
@@ -49,7 +57,7 @@ $font-primary: 'Roboto', sans-serif;
         height: 5px;
         content: "";
         position: absolute;
-        background-color: $prim-black;
+        background-color: $prim-white;
     }
 
     .nav-link-ltr::before {
@@ -75,7 +83,7 @@ $font-primary: 'Roboto', sans-serif;
         transition: 600ms;
         font-weight: bold;
         font-size: 30px;
-        color: $prim-black;
+        color: $prim-white;
         margin: 4px 4px 4px 4px;
         padding: 1px 1px 1px 1px;
         opacity: 0.60;
