@@ -133,7 +133,7 @@ $font-primary: 'Roboto', sans-serif;
     }
 } */
 
-.gallery-container {
+/* .gallery-container {
     margin-top: 5rem;
 
     .gallery-row {
@@ -161,6 +161,42 @@ $font-primary: 'Roboto', sans-serif;
         transform: scale(1.05);
         transition: 400ms;
         cursor: pointer;
+    }
+} */
+
+.gallery-container {
+
+    margin-top: 5rem;
+
+    .gallery-row {
+
+        margin-top: 2rem;
+
+        .gallery-center {
+
+            .image-container {
+                transition: 200ms;
+                display: inline-block;
+                background-color: white;
+                width: 17rem;
+                height: 17rem;
+                margin-left: 3rem;
+                border: 2px solid hsl(0, 0%, 90%);
+                overflow: hidden;
+                position: relative;
+
+                .gallery-image {
+                    width: 17rem;
+                    height: 17rem;
+                }
+            }
+
+            .image-container:hover {
+                transform: scale(1.05);
+                transition: 400ms;
+                cursor: pointer;
+            }
+        }
     }
 }
 
