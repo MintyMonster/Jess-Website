@@ -2,8 +2,11 @@
 $prim-black: rgba(0,0,0,1);
 $prim-white: rgba(255,255,255,1);
 $prim-grey: rgba(74,74,74,1);
+$prim-pink: rgba(249, 217, 244, 0.8);
 
 $font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Libre Franklin', sans-serif;
+$font-tertiary: 'Red Hat Mono', monospace;
 
 /* Responsiveness */ 
 
@@ -35,13 +38,13 @@ $font-primary: 'Roboto', sans-serif;
         font-size: 14px;
         text-transform: uppercase;
         text-decoration: none;
-        font-family: $font-primary;
-        color: rgba(255,255,255,1);
+        font-family: $font-secondary;
+        color: $prim-white;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 10px;
-        margin: 3px 3px 3px 3px;
+        margin: 4px 4px 4px 4px;
         opacity: 0.60;
         width: 6rem;
         text-align: center;
@@ -99,6 +102,7 @@ $font-primary: 'Roboto', sans-serif;
 
 .main {
     font-family: $font-primary;
+    background-color: black;
 
     .head-banner {
 
@@ -106,7 +110,7 @@ $font-primary: 'Roboto', sans-serif;
         flex-direction: column;
         align-items: baseline;
         height: 100vh;
-        background: url(../Assets/Content/banner.jpg) center center/cover no-repeat;
+        background: url(../Assets/Content/banner.png) center center/cover no-repeat;
         background-attachment: fixed;
         color: white;
 
@@ -116,22 +120,23 @@ $font-primary: 'Roboto', sans-serif;
 
             .banner-title {
 
-                font-family: $font-primary;
+                font-family: $font-secondary;
                 font-weight: bolder;
                 text-align: center;
-                font-size: 100px;
-                letter-spacing: 4px;
+                font-size: 80px;
+                letter-spacing: 2px;
                 margin-top: -4rem;
             }
 
             .banner-subtitle {
 
-                font-family: $font-primary;
-                font-size: 1.7rem;
+                font-family: $font-tertiary;
+                font-size: 1.5rem;
                 margin-top: -3rem;
-                margin-left: 8px;
+                margin-left: 45px;
                 margin-bottom: 50px;
                 color: hsl(0, 0%, 95%);
+                font-weight: bolder;
             }
         }
     }

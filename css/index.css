@@ -26,13 +26,13 @@
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  margin: 3px 3px 3px 3px;
+  margin: 4px 4px 4px 4px;
   opacity: 0.6;
   width: 6rem;
   text-align: center;
@@ -81,13 +81,14 @@
 /* Banner */
 .main {
   font-family: "Roboto", sans-serif;
+  background-color: black;
 }
 .main .head-banner {
   display: flex;
   flex-direction: column;
   align-items: baseline;
   height: 100vh;
-  background: url(../Assets/Content/banner.jpg) center center/cover no-repeat;
+  background: url(../Assets/Content/banner.png) center center/cover no-repeat;
   background-attachment: fixed;
   color: white;
 }
@@ -95,20 +96,21 @@
   margin: auto;
 }
 .main .head-banner .banner-content .banner-title {
-  font-family: "Roboto", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   font-weight: bolder;
   text-align: center;
-  font-size: 100px;
-  letter-spacing: 4px;
+  font-size: 80px;
+  letter-spacing: 2px;
   margin-top: -4rem;
 }
 .main .head-banner .banner-content .banner-subtitle {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.7rem;
+  font-family: "Red Hat Mono", monospace;
+  font-size: 1.5rem;
   margin-top: -3rem;
-  margin-left: 8px;
+  margin-left: 45px;
   margin-bottom: 50px;
   color: hsl(0deg, 0%, 95%);
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=index.css.map */
