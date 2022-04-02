@@ -17,24 +17,31 @@
         <!-- Fontawesome required -->
         <script src="https://kit.fontawesome.com/23196d1ae5.js" crossorigin="anonymous"></script>
 
+        <!-- Google fonts API -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=Libre+Franklin&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Red+Hat+Mono:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> 
         <title>Jessica Medway Photography</title>
     </head>
-    <body>
+    <body class="main">
         <div class="container navbar-container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <img src="./Assets/Placeholders/Logo_Placeholder.png" alt="Jessica Medway Photography Logo" class="logo">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
 
                   <div class="navbar">
                     <a class="nav-link nav-link-ltr" href="#">Home</a>
+                    <a class="nav-link nav-link-ltr" href="#">Gallery</a>
                     <a class="nav-link nav-link-ltr" href="#">About me</a>
-                    <a class="nav-link nav-link-ltr" href="#">Blog</a>
+                    <a class="nav-link nav-link-ltr" href="#">Contact</a>
                   </div>
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <div class="socials">
                     <a href="#" class="social-icon"><i class="fa-brands fa-facebook socials-link"></i></a>
                     <a href="#" class="social-icon"><i class="fa-brands fa-twitter socials-link"></i></a>
@@ -75,7 +82,7 @@
 
         </div>
       -->
-
+      <!-- 
       <div class="gallery-container">
 
         <div class="row gallery-row">
@@ -83,15 +90,16 @@
           <div class="col-md-8 gallery-center">
 
             <div class="image-container">
-              <img src="./Assets/Placeholders/Jess_photo_1.png" class="gallery-image">
+              <img src="./Assets/Gallery/Jess_landscape_1.jpg" class="gallery-image">
+              <div class="image-information"><i class="fa-solid fa-volume-low"></i> Test Band name<br><i class="fa-solid fa-location-pin"></i> Birmingham</div>
             </div>
 
             <div class="image-container middle-image">
-              <img src="./Assets/Placeholders/Jess_photo_1.png" class="gallery-image">
+              <img src="./Assets/Gallery/Jess_portrait_1.jpg" class="gallery-image">
             </div>
 
             <div class="image-container">
-              <img src="./Assets/Placeholders/Jess_photo_1.png" class="gallery-image">
+              <img src="./Assets/Gallery/Jess_portrait_2.jpg" class="gallery-image">
             </div>
 
           </div>
@@ -103,15 +111,15 @@
           <div class="col-md-8 gallery-center">
 
             <div class="image-container">
-              <img src="./Assets/Placeholders/Jess_photo_1.png" class="gallery-image">
+              <img src="./Assets/Gallery/Jess_portrait_3.jpg" class="gallery-image">
             </div>
 
             <div class="image-container middle-image">
-              <img src="./Assets/Placeholders/Jess_photo_1.png" class="gallery-image">
+              <img src="./Assets/Gallery/Jess_landscape_2.jpg" class="gallery-image">
             </div>
 
             <div class="image-container">
-              <img src="./Assets/Placeholders/Jess_photo_1.png" class="gallery-image">
+              <img src="./Assets/Gallery/Jess_landscape_3.jpg" class="gallery-image">
             </div>
 
           </div>
@@ -123,19 +131,199 @@
           <div class="col-md-8 gallery-center">
 
             <div class="image-container">
-              <img src="./Assets/Placeholders/Jess_photo_1.png" class="gallery-image">
+              <img src="./Assets/Gallery/Jess_portrait_4.jpg" class="gallery-image">
             </div>
 
             <div class="image-container middle-image">
-              <img src="./Assets/Placeholders/Jess_photo_1.png" class="gallery-image">
+              <img src="" class="gallery-image">
             </div>
 
             <div class="image-container">
-              <img src="./Assets/Placeholders/Jess_photo_1.png" class="gallery-image">
+              <img src="" class="gallery-image">
             </div>
 
           </div>
           <div class="col-md-2 outer"></div>
         </div>
+      -->
+
+      <!-- Gallery collage -->
+      <div class="row gallery-row">
+        <!-- Spacing div (Margin right) -->
+        <div class="col-md-3"></div>
+        <!-- Center gallery div -->
+        <div class="col-md-6">
+          <!-- Holds all images -->
+          <div class="image-row">
+            <!-- Column 1 -->
+            <div class="image-column">
+              <!-- Div container to hold the image + image information -->
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>
+                <img src="./Assets/Gallery/Jess_landscape_1.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>
+                <img src="./Assets/Gallery/Jess_portrait_1.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>
+                <img src="./Assets/Gallery/Jess_portrait_2.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>
+                <img src="./Assets/Gallery/Jess_portrait_3.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>
+                <img src="./Assets/Gallery/Jess_landscape_2.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>                
+                <img src="./Assets/Gallery/Jess_landscape_3.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>                
+                <img src="./Assets/Gallery/Jess_landscape_1.jpg" class="gallery-image">              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>                
+                <img src="./Assets/Gallery/Jess_portrait_1.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>                
+                <img src="./Assets/Gallery/Jess_portrait_2.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>                
+                <img src="./Assets/Gallery/Jess_portrait_3.jpg" class="gallery-image">
+              </div>
+            </div>
+            <!-- Column 2 -->
+            <div class="image-column">
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>                
+                <img src="./Assets/Gallery/Jess_landscape_3.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>                
+                <img src="./Assets/Gallery/Jess_landscape_1.jpg" class="gallery-image">              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>                
+                <img src="./Assets/Gallery/Jess_portrait_1.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>                
+                <img src="./Assets/Gallery/Jess_portrait_2.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>                
+                <img src="./Assets/Gallery/Jess_portrait_3.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>
+                <img src="./Assets/Gallery/Jess_landscape_1.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>
+                <img src="./Assets/Gallery/Jess_portrait_1.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>
+                <img src="./Assets/Gallery/Jess_portrait_2.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>
+                <img src="./Assets/Gallery/Jess_portrait_3.jpg" class="gallery-image">
+              </div>
+              <div class="image-container">
+                <div class="image-information">
+                  <p class="band-name"><i class="fa-solid fa-volume-low"></i> Test Band</p>
+                  <p class="image-location"><i class="fa-solid fa-location-pin"></i> Birmingham</p>
+                  <p class="image-date"><i class="fa-solid fa-calendar"></i> 19/01/1998</p>
+                </div>
+                <img src="./Assets/Gallery/Jess_landscape_2.jpg" class="gallery-image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Spacing div (Margin left) -->
+        <div class="col-md-3"></div>
+      </div>
     </body>
 </html>
