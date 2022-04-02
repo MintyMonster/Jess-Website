@@ -3,8 +3,170 @@
 /* Main styles */
 .main {
   background-color: rgba(0, 0, 0, 0.93);
+  height: 100%;
 }
 
+/* Carousel */
+/*
+input[type=radio] {
+    display: none;
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 1000px;
+    max-height: 800px;
+    height: 800px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .carousel-card-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+
+        .carousel-card {
+            position: absolute;
+            width: 60%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transition: transform .4s ease;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+#item-1:checked ~ .carousel-card-container #album-3,
+#item-2:checked ~ .carousel-card-container #album-1,
+#item-3:checked ~ .carousel-card-container #album-2 {
+    transform: translateX(40%) scale(0.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .carousel-card-container #album-2,
+#item-2:checked ~ .carousel-card-container #album-3,
+#item-3:checked ~ .carousel-card-container #album-1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#item-1:checked ~ .carousel-card-container #album-1,
+#item-2:checked ~ .carousel-card-container #album-2,
+#item-3:checked ~ .carousel-card-container #album-3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+
+    img {
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+}
+*/
+input[type=radio] {
+  display: none;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 1000px;
+  max-height: 800px;
+  height: 800px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.card-container .cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.card-container .cards .card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.card-container .cards .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.card-container .cards .card .overlay-container {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: rgb(255, 255, 255);
+  transition: 0.5s ease;
+  opacity: 1;
+  font-size: 14px;
+  padding: 5px;
+  text-align: left;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+.card-container .cards .card .overlay-container .album-name {
+  font-size: 35px;
+  margin-left: 4px;
+  font-family: "Roboto", sans-serif;
+}
+.card-container .cards .card .overlay-container .picture-count {
+  font-size: 18px;
+  margin-left: 5px;
+  margin-top: -20px;
+  font-family: "Red Hat Mono", monospace;
+}
+.card-container .cards .card:hover .overlay-container {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+#item-1:checked ~ .cards #song-1 img, #item-2:checked ~ .cards #song-2 img, #item-3:checked ~ .cards #song-3 img {
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+/* Navbar */
 .logo {
   width: 5rem;
   height: 5rem;
@@ -248,7 +410,7 @@
 .gallery-row .image-row .image-column .image-information .band-name {
   font-size: 26px;
   margin-left: 4px;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
 }
 .gallery-row .image-row .image-column .image-information .image-location {
   font-size: 18px;
