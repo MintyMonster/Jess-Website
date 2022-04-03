@@ -91,7 +91,7 @@ input[type=radio] {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 1rem;
 }
 .card-container .cards {
   position: relative;
@@ -145,24 +145,32 @@ input[type=radio] {
   background: rgba(0, 0, 0, 0.2);
 }
 
-#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+#item-1:checked ~ .cards #album-3,
+#item-2:checked ~ .cards #album-1,
+#item-3:checked ~ .cards #album-2 {
   transform: translatex(-40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+#item-1:checked ~ .cards #album-2,
+#item-2:checked ~ .cards #album-3,
+#item-3:checked ~ .cards #album-1 {
   transform: translatex(40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
 
-#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+#item-1:checked ~ .cards #album-1,
+#item-2:checked ~ .cards #album-2,
+#item-3:checked ~ .cards #album-3 {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
 }
-#item-1:checked ~ .cards #song-1 img, #item-2:checked ~ .cards #song-2 img, #item-3:checked ~ .cards #song-3 img {
+#item-1:checked ~ .cards #album-1 img,
+#item-2:checked ~ .cards #album-2 img,
+#item-3:checked ~ .cards #album-3 img {
   box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
 
@@ -174,7 +182,7 @@ input[type=radio] {
 }
 
 .navbar-container {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .navbar .nav-link {
