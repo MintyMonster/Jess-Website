@@ -1,20 +1,30 @@
 /* Variables */
-/* Responsiveness */
 /* Navbar */
 .place-content-center {
   display: grid;
   place-content: center;
 }
 
-.logo {
-  width: 15rem;
-  height: 4rem;
-  margin-left: 2rem;
-  object-fit: cover;
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.logo-wrapper .logo {
+  width: 16vw;
+  height: auto;
+  margin-left: 1vw;
+  overflow: hidden;
+  min-width: 135px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .navbar-container {
-  margin-top: 3rem;
+  margin-top: 2vw;
   position: absolute;
   left: 0;
   right: 0;
@@ -24,7 +34,7 @@
 
 .navbar .nav-link {
   font-weight: bold;
-  font-size: 14px;
+  font-size: max(1vw, 8px);
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Libre Franklin", sans-serif;
@@ -32,10 +42,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px;
-  margin: 2px 2px 2px 2px;
+  padding: 1vw;
+  margin: 0.1vw 0.1vw 0.1vw 0.1vw;
   opacity: 0.75;
-  width: 8rem;
+  width: 8vw;
+  max-width: 120px;
+  min-width: 60px;
   text-align: center;
 }
 .navbar .nav-link:hover {
@@ -44,18 +56,20 @@
 }
 .navbar .nav-link::before {
   transition: 300ms;
-  height: 5px;
+  height: 0.3vw;
+  min-height: 1.5px;
   content: "";
   position: absolute;
   background-color: white;
 }
 .navbar .nav-link-ltr::before {
-  width: 5rem;
-  bottom: 5px;
+  width: 8vw;
+  min-width: 40px;
+  bottom: 0.1vw;
   opacity: 0;
 }
 .navbar .nav-link-ltr:hover::before {
-  bottom: 10px;
+  bottom: 0.4vw;
   opacity: 1;
 }
 
@@ -68,10 +82,10 @@
 .socials .social-icon {
   transition: 600ms;
   font-weight: bold;
-  font-size: 30px;
+  font-size: max(2vw, 14px);
   color: white;
-  margin: 4px 4px 4px 4px;
-  padding: 1px 1px 1px 1px;
+  margin: 0.2vw 0.2vw 0.2vw 0.2vw;
+  padding: 0.1vw 0.1vw 0.1vw 1.2vw;
   opacity: 0.6;
 }
 .socials .social-icon:hover {
@@ -100,15 +114,15 @@
   font-family: "Libre Franklin", sans-serif;
   font-weight: bolder;
   text-align: center;
-  font-size: 80px;
-  letter-spacing: 2px;
+  font-size: max(5.5vw, 30px);
+  letter-spacing: 0.1vw;
   margin-top: -4rem;
 }
 .main .head-banner .banner-content .banner-subtitle {
   font-family: "Red Hat Mono", monospace;
-  font-size: 1.5rem;
-  margin-top: -3rem;
-  margin-bottom: 50px;
+  font-size: max(1.5vw, 9px);
+  margin-top: -3vw;
+  margin-bottom: 5vw;
   color: #f2f2f2;
   font-weight: bolder;
 }
