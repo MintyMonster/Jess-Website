@@ -7,6 +7,7 @@ $prim-pink: rgba(249, 217, 244, 0.8);
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Libre Franklin', sans-serif;
 $font-tertiary: 'Red Hat Mono', monospace;
+$font-quaternary: 'Roboto Slab', serif;
 
 /* Navbar */
 
@@ -51,7 +52,7 @@ $font-tertiary: 'Red Hat Mono', monospace;
         font-size: max(1vw, 8px);
         text-transform: uppercase;
         text-decoration: none;
-        font-family: $font-secondary;
+        font-family: $font-primary;
         color: $prim-white;
         display: flex;
         justify-content: center;
