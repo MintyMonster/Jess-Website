@@ -52,183 +52,6 @@
   opacity: 1;
 }
 
-/* Carousel */
-/*
-input[type=radio] {
-    display: none;
-}
-
-.carousel-container {
-    width: 100%;
-    max-width: 1000px;
-    max-height: 800px;
-    height: 800px;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    .carousel-card-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 20px;
-
-        .carousel-card {
-            position: absolute;
-            width: 60%;
-            height: 100%;
-            left: 0;
-            right: 0;
-            margin: auto;
-            transition: transform .4s ease;
-            cursor: pointer;
-
-            img {
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-                object-fit: cover;
-            }
-        }
-    }
-}
-
-#item-1:checked ~ .carousel-card-container #album-3,
-#item-2:checked ~ .carousel-card-container #album-1,
-#item-3:checked ~ .carousel-card-container #album-2 {
-    transform: translateX(40%) scale(0.8);
-    opacity: .4;
-    z-index: 0;
-}
-
-#item-1:checked ~ .carousel-card-container #album-2,
-#item-2:checked ~ .carousel-card-container #album-3,
-#item-3:checked ~ .carousel-card-container #album-1 {
-    transform: translatex(40%) scale(.8);
-    opacity: .4;
-    z-index: 0;
-}
-
-#item-1:checked ~ .carousel-card-container #album-1,
-#item-2:checked ~ .carousel-card-container #album-2,
-#item-3:checked ~ .carousel-card-container #album-3 {
-    transform: translatex(0) scale(1);
-    opacity: 1;
-    z-index: 1;
-
-    img {
-        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-    }
-}
-*/
-/*
-
-input[type=radio] {
-    display: none;
-  }
-
-  .card-container {
-    width: 100%;
-    max-width: 1000px;
-    max-height: 800px;
-    height: 800px;
-    transform-style: preserve-3d;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1rem;
-
-    .cards {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 20px;
-
-        .card {
-            position: absolute;
-            width: 60%;
-            height: 100%;
-            left: 0;
-            right: 0;
-            margin: auto;
-            transition: transform .4s ease;
-            cursor: pointer;
-
-            img {
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-                object-fit: cover;
-              }
-
-            .overlay-container {
-                position: absolute;
-                bottom: 0;
-                background: rgba(0,0,0,0.6);
-                color: $prim-white;
-                transition: 0.5s ease;
-                opacity: 1;
-                font-size: 14px;
-                padding: 5px;
-                text-align: left;
-                font-weight: bolder;
-                font-family: $font-primary;
-                width: 100%;
-                height: 100%;
-
-                .album-name {
-                    font-size: 35px;
-                    margin-left: 4px;
-                    font-family: $font-primary;
-                }
-
-                .picture-count {
-                    font-size: 18px;
-                    margin-left: 5px;
-                    margin-top: -20px;
-                    font-family: $font-tertiary;
-                }
-            }
-          }
-
-        .card:hover .overlay-container {
-            background: rgba(0,0,0,0.2);
-        }
-      }
-  }
-
-  #item-1:checked ~ .cards #album-3, 
-  #item-2:checked ~ .cards #album-1, 
-  #item-3:checked ~ .cards #album-2 {
-    transform: translatex(-40%) scale(.8);
-    opacity: .4;
-    z-index: 0;
-  }
-
-  #item-1:checked ~ .cards #album-2, 
-  #item-2:checked ~ .cards #album-3, 
-  #item-3:checked ~ .cards #album-1 {
-    transform: translatex(40%) scale(.8);
-    opacity: .4;
-    z-index: 0;
-  }
-
-  #item-1:checked ~ .cards #album-1, 
-  #item-2:checked ~ .cards #album-2, 
-  #item-3:checked ~ .cards #album-3 {
-    transform: translatex(0) scale(1);
-    opacity: 1;
-    z-index: 1;
-
-    img {
-      box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-    }
-  }
-
-*/
 /* Navbar */
 .logo-wrapper {
   display: flex;
@@ -435,132 +258,6 @@ input[type=radio] {
   z-index: 3;
 }
 
-/*
-.gallery-container {
-
-    margin-top: 5rem;
-
-    .gallery-image {
-        width: 17rem;
-        height: 17rem;
-    }
-
-    .gallery-row {
-        height: 5rem;
-        background-color: aqua;
-    }
-
-    .gallery-column-1 {
-        display: flex;
-        justify-content: right;
-        align-items: center;
-    }
-
-    .gallery-column-2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .gallery-column-3 {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-    }
-} */
-/* .gallery-container {
-    margin-top: 5rem;
-
-    .gallery-row {
-        margin-top: 2rem;
-    }
-
-    .gallery-center {
-        display: inline-block;
-    }
-
-    .gallery-image {
-        width: 17rem;
-        height: 17rem;
-        margin-left: 3rem;
-        transition: 400ms;
-    }
-
-    .image-container {
-        display: inline;
-        width: 17rem;
-        height: 17rem;
-    }
-
-    .gallery-image:hover {
-        transform: scale(1.05);
-        transition: 400ms;
-        cursor: pointer;
-    }
-} */
-/*
-.gallery-container {
-
-    margin-top: 5rem;
-
-    .gallery-row {
-
-        margin-top: 2rem;
-
-        .gallery-center {
-
-            text-align: center;
-
-            .image-container {
-                transition: 200ms;
-                display: inline-block;
-                background-color: white;
-                width: 17rem;
-                height: 17rem;
-                border: 2px solid hsl(0, 0%, 90%);
-                overflow: hidden;
-                position: relative;
-
-                .gallery-image {
-                    width: 17rem;
-                    height: 17rem;
-                    object-fit: cover;
-                }
-
-                .image-information {
-                    position: absolute;
-                    bottom: 0;
-                    background: rgba(0,0,0,0.5);
-                    color: $prim-white;
-                    width: 100%;
-                    transition: 0.5s ease;
-                    opacity: 0;
-                    font-size: 15px;
-                    padding: 5px;
-                    text-align: left;
-                    font-weight: bolder;
-                    font-family: $font-secondary;
-                }
-
-            }
-
-            .image-container:hover {
-                transform: scale(1.05);
-                transition: 400ms;
-                cursor: pointer;
-            }
-
-            .image-container:hover .image-information {
-                opacity: 1;
-            }
-
-            .middle-image {
-                margin-left: 2rem;
-                margin-right: 2rem;
-            }
-        }
-    }
-} */
 .gallery-row {
   margin-top: 3vw;
 }
@@ -644,7 +341,6 @@ input[type=radio] {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 2vw;
   left: 0;
   top: 0;
   width: 100%;
@@ -654,11 +350,14 @@ input[type=radio] {
   background-color: rgba(0, 0, 0, 0.9);
 }
 .imageModal .modal-content {
-  margin: auto;
   display: block;
   width: 70vw;
-  max-width: 550px;
+  max-width: 600px;
   border: 0.4vw solid grey;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 700px) {
   .imageModal .modal-content {
@@ -675,7 +374,8 @@ input[type=radio] {
   padding: 10px 0;
   height: 150px;
 }
-.imageModal .modal-content, .imageModal #caption {
+.imageModal .modal-content,
+.imageModal #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;

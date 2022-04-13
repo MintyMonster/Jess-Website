@@ -320,7 +320,6 @@ serif;
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 2vw;
     left: 0;
     top: 0;
     width: 100%;
@@ -330,16 +329,18 @@ serif;
     background-color: rgba(0, 0, 0, 0.9);
 
     .modal-content {
-        margin: auto;
         display: block;
-        width: auto;
-        max-height: 700px;
+        width: 70vw;
+        max-width: 600px;
         border: 0.4vw solid grey;
 
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
         @media only screen and (max-width:700px) {
-            width: auto;
-            max-height: 300px;
-            max-width: 300px;
+            width: 70vw;
         }
     }
 
@@ -385,7 +386,7 @@ serif;
     .modal-close {
         position: absolute;
         top: 1vw;
-        right: 3vw;
+        right: 5vw;
         color: #f1f1f1;
         font-size: 40px;
         font-weight: bold;
