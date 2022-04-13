@@ -1,3 +1,11 @@
+/*
+    Developer: Cameron Liddell A.K.A MintyMonster 
+    Github: https://github.com/MintyMonster
+    Instagram: https://www.instagram.com/cameronliddelldev/
+    Contact: cameronliddelldev@gmail.com
+
+*/
+
 const galleryElementOne = document.getElementById("image-column-one");
 const galleryElementTwo = document.getElementById("image-column-two");
 let i = 1;

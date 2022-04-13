@@ -1,3 +1,11 @@
+/*
+    Developer: Cameron Liddell A.K.A MintyMonster 
+    Github: https://github.com/MintyMonster
+    Instagram: https://www.instagram.com/cameronliddelldev/
+    Contact: cameronliddelldev@gmail.com
+
+*/
+
 function galleryOnClick(element) {
   var modal = document.getElementById("modal");
   var imgSrc = $(element).find('img').attr('src');
