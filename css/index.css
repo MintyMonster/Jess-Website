@@ -38,7 +38,7 @@
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  color: white;
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +46,7 @@
   margin: 0.1vw 0.1vw 0.1vw 0.1vw;
   opacity: 0.75;
   width: 8vw;
-  max-width: 120px;
+  max-width: 170px;
   min-width: 60px;
   text-align: center;
 }
@@ -60,7 +60,7 @@
   min-height: 1.5px;
   content: "";
   position: absolute;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 .navbar .nav-link-ltr::before {
   width: 8vw;
@@ -83,7 +83,7 @@
   transition: 600ms;
   font-weight: bold;
   font-size: max(2vw, 14px);
-  color: white;
+  color: rgb(255, 255, 255);
   margin: 0.2vw 0.2vw 0.2vw 0.2vw;
   padding: 0.1vw 0.1vw 0.1vw 1.2vw;
   opacity: 0.6;
@@ -123,7 +123,7 @@
   font-size: max(1.5vw, 9px);
   margin-top: -3vw;
   margin-bottom: 5vw;
-  color: #f2f2f2;
+  color: hsl(0deg, 0%, 95%);
   font-weight: bolder;
 }
 

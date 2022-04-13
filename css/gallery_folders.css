@@ -1,0 +1,353 @@
+/* Variables */
+/* Responsiveness */
+/* Main styles */
+.main {
+  background-color: rgba(0, 0, 0, 0.93);
+  height: 100%;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+.page-container .content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+/* Footer container */
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+.footer-container .copyright-container {
+  font-size: max(1vw, 10px);
+  margin-top: 0.3vw;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.6;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer-container .socials-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-container .socials-footer .social-icon {
+  transition: 600ms;
+  font-weight: bold;
+  font-size: max(1vw, 15px);
+  color: rgb(255, 255, 255);
+  margin: 0.1vw 0.1vw 0.1vw 0.1vw;
+  padding: 0.1vw 0.1vw 0.1vw 0.6vw;
+  opacity: 0.6;
+}
+.footer-container .socials-footer .social-icon:hover {
+  opacity: 1;
+}
+
+/* Navbar */
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.logo-wrapper .logo {
+  width: 16vw;
+  height: auto;
+  margin-left: 1vw;
+  overflow: hidden;
+  min-width: 135px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.navbar-container {
+  margin-top: 2vw;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar .nav-link {
+  font-weight: bold;
+  font-size: max(1vw, 8px);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+  margin: 0.1vw 0.1vw 0.1vw 0.1vw;
+  opacity: 0.75;
+  width: 8vw;
+  max-width: 170px;
+  min-width: 60px;
+  text-align: center;
+}
+.navbar .nav-link:hover {
+  opacity: 1;
+  transition: 300ms;
+}
+.navbar .nav-link::before {
+  transition: 300ms;
+  height: 0.3vw;
+  min-height: 1.5px;
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+}
+.navbar .nav-link-ltr::before {
+  width: 8vw;
+  min-width: 40px;
+  bottom: 0.1vw;
+  opacity: 0;
+}
+.navbar .nav-link-ltr:hover::before {
+  bottom: 0.4vw;
+  opacity: 1;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.socials .social-icon {
+  transition: 600ms;
+  font-weight: bold;
+  font-size: max(2vw, 14px);
+  color: rgb(255, 255, 255);
+  margin: 0.2vw 0.2vw 0.2vw 0.2vw;
+  padding: 0.1vw 0.1vw 0.1vw 1.2vw;
+  opacity: 0.6;
+}
+.socials .social-icon:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.title-contents .back-icon {
+  font-size: max(1.5vw, 10px);
+  margin-top: 1vw;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-right: 1.6vw;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  opacity: 0.75;
+  transition: 300ms;
+}
+@media only screen and (min-width: 800px) {
+  .title-contents .back-icon {
+    float: right;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .title-contents .back-icon {
+    margin-top: 2vw;
+    text-align: center;
+  }
+}
+.title-contents .back-icon:hover {
+  opacity: 1;
+}
+.title-contents .title-container {
+  font-size: 2.5vw;
+  font-weight: bold;
+  font-family: "Red Hat Mono", monospace;
+  height: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2vw;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+@media only screen and (max-width: 700px) {
+  .title-contents .title-container {
+    margin-top: 1vw;
+  }
+}
+
+.gallery-row {
+  margin-top: 3vw;
+}
+.gallery-row .image-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.gallery-row .image-row .image-column {
+  -ms-flex: 50%;
+  flex: 50%;
+  padding: 0 0.1vw;
+}
+.gallery-row .image-row .image-column .gallery-image {
+  width: 100%;
+  vertical-align: middle;
+  transition: 200ms;
+}
+.gallery-row .image-row .image-column .image-container {
+  transition: 200ms;
+  position: relative;
+  margin-top: 0.2vw;
+  cursor: pointer;
+}
+.gallery-row .image-row .image-column .image-information {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  transition: 0.5s ease;
+  opacity: 0;
+  font-size: 4vw;
+  padding: 0.5vw;
+  text-align: left;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+.gallery-row .image-row .image-column .image-information .band-name {
+  font-size: 2vw;
+  margin-left: 0.1vw;
+  font-family: "Roboto", sans-serif;
+}
+@media screen and (max-width: 375px) {
+  .gallery-row .image-row .image-column .image-information .band-name {
+    font-size: 2.5vw;
+  }
+}
+.gallery-row .image-row .image-column .image-information .image-location {
+  font-size: 1vw;
+  margin-left: 0.9vw;
+  margin-top: -1.4vw;
+  font-family: "Red Hat Mono", monospace;
+}
+@media screen and (max-width: 375px) {
+  .gallery-row .image-row .image-column .image-information .image-location {
+    margin-top: -15px;
+    font-size: 1.5vw;
+  }
+}
+.gallery-row .image-row .image-column .image-information .image-date {
+  font-size: 0.9vw;
+  margin-left: 0.9vw;
+  margin-top: -1vw;
+  font-family: "Red Hat Mono", monospace;
+}
+@media screen and (max-width: 375px) {
+  .gallery-row .image-row .image-column .image-information .image-date {
+    margin-top: -15px;
+    font-size: 1.4vw;
+  }
+}
+.gallery-row .image-row .image-column .image-container:hover .image-information {
+  opacity: 1;
+}
+
+.imageModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 2vw;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.imageModal .modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  max-height: 700px;
+  border: 0.4vw solid grey;
+}
+@media only screen and (max-width: 700px) {
+  .imageModal .modal-content {
+    width: auto;
+    max-height: 300px;
+    max-width: 300px;
+  }
+}
+.imageModal #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+.imageModal .modal-content,
+.imageModal #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.imageModal .modal-close {
+  position: absolute;
+  top: 1vw;
+  right: 3vw;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.imageModal .modal-close:hover,
+.imageModal .modal-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nothing-to-see {
+  font-size: 2vw;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 3vw;
+  color: rgb(255, 255, 255);
+  opacity: 0.4;
+}
+
+/*# sourceMappingURL=gallery_folders.css.map */
