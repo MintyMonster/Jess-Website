@@ -1,8 +1,6 @@
 const images = [
-    "../Assets/Gallery/Live-Music_CANDID_Birmingham_2021_1.jpg",
     "../Assets/Gallery/Live-Music_Jack-Catell_Birmingham_2021_5.jpg",
     "../Assets/Gallery/Live-Music_LA-DHARMA_Birmingham_2021_10.jpg",
-    "../Assets/Gallery/Live-Music_LA-DHARMA_Birmingham_2021_6.jpg",
     "../Assets/Gallery/Live-Music_LA-DHARMA_Birmingham_2021_9.jpg",
     "../Assets/Gallery/Live-Music_THE-CLAUSE_Birmingham_2021_10.jpg",
     "../Assets/Gallery/Portraits_THE-CHASERS_Cheltenham_2022_54.png",

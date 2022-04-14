@@ -257,21 +257,21 @@ serif;
         }
 
         &:nth-child(1) {
-            background-image: url(../Assets/Gallery/Live-Music_THE-CLAUSE_Birmingham_2021_3.jpg);
+            background-image: url(../Assets/Gallery/Fashion_KUSTOMS_Leamington_2021_1.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
         }
 
         &:nth-child(2) {
-            background-image: url(../Assets/Carousel/Jess_portrait_1.jpg);
+            background-image: url(../Assets/Gallery/Live-Music_THE-CLAUSE_Birmingham_2021_3.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
         }
 
         &:nth-child(3) {
-            background-image: url(../Assets/Gallery/Fashion_KUSTOMS_Leamington_2021_1.png);
+            background-image: url(../Assets/Carousel/Jess_portrait_1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -433,7 +433,7 @@ serif;
     .modal-content {
         display: block;
         width: 70vw;
-        max-width: 600px;
+        max-width: 550px;
         border: 0.4vw solid grey;
 
         top: 50%;

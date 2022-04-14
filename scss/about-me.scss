@@ -1,0 +1,187 @@
+/*
+    Developer: Cameron Liddell A.K.A MintyMonster 
+    Github: https://github.com/MintyMonster
+    Instagram: https://www.instagram.com/cameronliddelldev/
+    Contact: cameronliddelldev@gmail.com
+
+*/
+
+/* Variables */
+$prim-black: rgba(0, 0, 0, 1);
+$prim-white: rgba(255, 255, 255, 1);
+$prim-grey: rgba(74, 74, 74, 1);
+
+$font-primary: 'Roboto',
+sans-serif;
+$font-secondary: 'Libre Franklin',
+sans-serif;
+$font-tertiary: 'Red Hat Mono',
+monospace;
+$font-quaternary: 'Roboto Slab',
+serif;
+
+/* Responsiveness */
+
+
+/* Main styles */
+
+.main {
+    background-color: rgba(0, 0, 0, 0.93);
+    height: 100%;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+
+    .content-wrap {
+        padding-bottom: 2.5rem;
+    }
+}
+
+/* Footer container */
+
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+
+    .copyright-container {
+        font-size: max(1vw, 10px);
+        margin-top: 0.3vw;
+        color: rgba(255, 255, 255, 0.6);
+        opacity: 0.6;
+        font-family: $font-primary;
+        font-weight: bold;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .socials-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .social-icon {
+            transition: 600ms;
+            font-weight: bold;
+            font-size: max(1vw, 15px);
+            color: $prim-white;
+            margin: 0.1vw 0.1vw 0.1vw 0.1vw;
+            padding: 0.1vw 0.1vw 0.1vw 0.6vw;
+            opacity: 0.60;
+        }
+
+        .social-icon:hover {
+            opacity: 1;
+        }
+    }
+}
+
+
+/* Navbar */
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    .logo {
+        width: 16vw;
+        height: auto;
+        margin-left: 1vw;
+        overflow: hidden;
+        min-width: 135px;
+
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.navbar-container {
+    margin-top: 2vw;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+
+    .nav-link {
+        font-weight: bold;
+        font-size: max(1vw, 8px);
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $font-primary;
+        color: $prim-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw;
+        margin: 0.1vw 0.1vw 0.1vw 0.1vw;
+        opacity: 0.75;
+        width: 8vw;
+        max-width: 170px;
+        min-width: 60px;
+        text-align: center;
+    }
+
+    .nav-link:hover {
+        opacity: 1;
+        transition: 300ms;
+    }
+
+    .nav-link::before {
+        transition: 300ms;
+        // 0.3vw
+        height: 0.3vw;
+        min-height: 1.5px;
+        content: "";
+        position: absolute;
+        background-color: $prim-white;
+    }
+
+    .nav-link-ltr::before {
+        width: 8vw;
+        min-width: 40px;
+        bottom: 0.1vw;
+        opacity: 0;
+    }
+
+    .nav-link-ltr:hover::before {
+        bottom: 0.4vw;
+        opacity: 1;
+    }
+}
+
+.socials {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .social-icon {
+        transition: 600ms;
+        font-weight: bold;
+        font-size: max(2vw, 14px);
+        color: $prim-white;
+        margin: 0.2vw 0.2vw 0.2vw 0.2vw;
+        padding: 0.1vw 0.1vw 0.1vw 1.2vw;
+        opacity: 0.60;
+    }
+
+    .social-icon:hover {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
