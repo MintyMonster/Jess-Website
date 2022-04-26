@@ -201,11 +201,20 @@
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .carousel__item .carousel-overlay .picture-count {
-  font-size: 1.3vw;
+  font-size: max(1.3vw, 5px);
   margin-left: 5px;
   margin-top: -1.5vw;
   font-family: "Red Hat Mono", monospace;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.carousel__item .carousel-overlay .see-all-arrow {
+  width: 100%;
+  text-align: left;
+}
+.carousel__item .carousel-overlay .see-all-arrow .see-all-arrow-icon {
+  font-size: 2vw;
+  font-family: "Red Hat Mono", monospace;
+  transition: 550ms;
 }
 .carousel__item:nth-child(1) {
   background-image: url(../Assets/Gallery/Fashion_KUSTOMS_Leamington_2021_1.png);
@@ -232,7 +241,7 @@
   background-position: center;
 }
 .carousel__item:nth-child(5) {
-  background-image: url(../Assets/Placeholders/istockphoto-936681148-612x612.jpg);
+  background-image: url(../Assets/Gallery/Live-Music_THE-CLAUSE_Birmingham_2021_6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -298,7 +307,7 @@
   color: rgb(255, 255, 255);
   transition: 0.5s ease;
   opacity: 0;
-  font-size: 4vw;
+  font-size: max(4vw, 20px);
   padding: 0.5vw;
   text-align: left;
   font-weight: bolder;
@@ -307,37 +316,30 @@
   height: 100%;
 }
 .gallery-row .image-row .image-column .image-information .band-name {
-  font-size: 2vw;
+  font-size: max(2vw, 15px);
   margin-left: 0.1vw;
   font-family: "Roboto", sans-serif;
 }
-@media screen and (max-width: 375px) {
-  .gallery-row .image-row .image-column .image-information .band-name {
-    font-size: 2.5vw;
-  }
-}
 .gallery-row .image-row .image-column .image-information .image-location {
-  font-size: 1vw;
-  margin-left: 0.9vw;
+  font-size: max(1vw, 8px);
+  margin-left: 0.7vw;
   margin-top: -1.4vw;
   font-family: "Red Hat Mono", monospace;
 }
 @media screen and (max-width: 375px) {
   .gallery-row .image-row .image-column .image-information .image-location {
     margin-top: -15px;
-    font-size: 1.5vw;
   }
 }
 .gallery-row .image-row .image-column .image-information .image-date {
-  font-size: 0.9vw;
-  margin-left: 0.9vw;
+  font-size: max(0.9vw, 7px);
+  margin-left: 0.7vw;
   margin-top: -1vw;
   font-family: "Red Hat Mono", monospace;
 }
 @media screen and (max-width: 375px) {
   .gallery-row .image-row .image-column .image-information .image-date {
     margin-top: -15px;
-    font-size: 1.4vw;
   }
 }
 .gallery-row .image-row .image-column .image-container:hover .image-information {

@@ -156,7 +156,7 @@
 .center-column .center-top-container .title-container {
   width: 100%;
   text-align: center;
-  font-size: 2.2vw;
+  font-size: max(2.2vw, 22px);
   color: rgb(255, 255, 255);
   opacity: 0.75;
   font-family: "Roboto", sans-serif;
@@ -165,7 +165,7 @@
 .center-column .center-top-container .contact-information-container {
   width: 100%;
   text-align: center;
-  font-size: 1.3vw;
+  font-size: max(1.3vw, 10px);
   color: rgb(255, 255, 255);
   opacity: 0.4;
   font-family: "Roboto", sans-serif;
@@ -180,7 +180,7 @@
 .enquiry-container .center-enquiry-container .title-container {
   width: 100%;
   text-align: center;
-  font-size: 2.2vw;
+  font-size: max(2.2vw, 22px);
   color: rgb(255, 255, 255);
   opacity: 0.75;
   font-family: "Roboto", sans-serif;
@@ -189,7 +189,7 @@
 .enquiry-container .center-enquiry-container .enquiry-para-container {
   width: 100%;
   text-align: center;
-  font-size: 1vw;
+  font-size: max(1.3vw, 10px);
   color: rgb(255, 255, 255);
   opacity: 0.4;
   font-family: "Roboto", sans-serif;
@@ -198,8 +198,11 @@
 
 .enquiry-form-container .input-container {
   width: 650px;
-  max-width: 100%;
+  max-width: 90%;
   margin: 20px auto 25px auto;
+}
+.enquiry-form-container .input-container .submit-button-container {
+  text-align: center;
 }
 .enquiry-form-container .input-container .styled-input {
   float: left;
@@ -291,6 +294,13 @@
 .enquiry-form-container .input-container .submit-btn:hover {
   transform: translateY(1px);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+.enquiry-form-container .input-container .validation-text {
+  color: rgb(184, 40, 40);
+  font-size: small;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.5vw;
 }
 
 /*# sourceMappingURL=contact.css.map */

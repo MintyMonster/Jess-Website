@@ -36,8 +36,30 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Red+Hat+Mono:wght@300&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
-  <title>Jessica Medway Photography</title>
 
+
+  <!-- Meta tags for SEO -->
+  <meta name="description"
+    content="Jessica Medway. A student photographer at the University of Gloucestershire with a passion to show the beauty in people, one picture at a time.">
+
+  <meta property="og:type" content="portfolio">
+  <meta property="og:title" content="Jessica Medway Photography gallery">
+  <meta property="og:description"
+    content="Jessica Medway. A student photographer at the University of Gloucestershire with a passion to show the beauty in people, one picture at a time.">
+
+  <meta property="og:site_name" content="Jessica Medway Photography">
+  <meta name="twitter:title" content="Jessica Medway Photography gallery">
+  <meta name="twitter:description"
+    content="Jessica Medway. A student photographer at the University of Gloucestershire with a passion to show the beauty in people, one picture at a time.">
+
+  <meta name="author" content="Jessica Medway">
+  <meta name="keywords" content="photography, portfolio, Cheltenham, Warwick, Jessica Medway, Medway, student, University of Gloucestershire, Gloucestershire, photography services, 
+      photography studio, photographer, photography solutions, headshots, band photography, music photography, people photography, student photography, student photographer, 
+      film, portraits, portrait photography, headshot photography, friendly, Live music, live music, video, locations, Birmingham, affordable photography, affordable, cheap photography,
+      cheap, inexpensive photography, inexpensive, Photography Cheltenham, student photography Cheltenham">
+
+
+  <title>Jessica Medway Photography Gallery</title>
 </head>
 <!-- Navbar -->
 
@@ -65,7 +87,8 @@
               <div class="socials">
                 <a href="#" class="social-icon"><i class="fa-brands fa-facebook socials-link"></i></a>
                 <a href="#" class="social-icon"><i class="fa-brands fa-twitter socials-link"></i></a>
-                <a href="https://www.instagram.com/jmedwayphotographyy/" class="social-icon" target="_blank"><i class="fa-brands fa-instagram socials-link"></i></a>
+                <a href="https://www.instagram.com/jmedwayphotographyy/" class="social-icon" target="_blank"><i
+                    class="fa-brands fa-instagram socials-link"></i></a>
               </div>
             </div>
           </div>
@@ -78,34 +101,41 @@
         <div class="col-md-6">
           <div class="carousel">
             <ul class="carousel__list">
-              <li class="carousel__item" data-pos="-2" onclick="carouselOnClick('./fashion.html', this)">
+              <li class="carousel__item" id="carousel-fashion" data-pos="-2"
+                onclick="carouselOnClick('./fashion.html', this)">
                 <div class="carousel-overlay">
                   <p class="album-name">Fashion</p>
                   <p class="picture-count" id="fashion-count"></p>
                 </div>
               </li>
-              <li class="carousel__item" data-pos="-1" onclick="carouselOnClick('./live-music.html', this)"">
-                <div class="carousel-overlay">
+              <li class="carousel__item" id="carousel-live-music" data-pos="-1"
+                onclick="carouselOnClick('./live-music.html', this)">
+                <div class=" carousel-overlay">
                   <p class="album-name">Live Music</p>
                   <p class="picture-count" id="live-music-count"></p>
                 </div>
               </li>
-              <li class="carousel__item" data-pos="0" onclick="carouselOnClick('./portraits.html', this)">
+              <li class="carousel__item" id="carousel-portraits" data-pos="0"
+                onclick="carouselOnClick('./portraits.html', this)">
                 <div class="carousel-overlay">
                   <p class="album-name">Portraits</p>
                   <p class="picture-count" id="portraits-count"></p>
                 </div>
               </li>
-              <li class="carousel__item" data-pos="1" onclick="carouselOnClick('./film.html', this)">
+              <li class="carousel__item" id="carousel-film" data-pos="1" onclick="carouselOnClick('./film.html', this)">
                 <div class="carousel-overlay">
                   <p class="album-name">Film</p>
                   <p class="picture-count" id="film-count"></p>
                 </div>
               </li>
-              <li class="carousel__item" data-pos="2" onclick="carouselOnClick('./video.html', this)">
+              <li class="carousel__item" id="carousel-see-all" data-pos="2"
+                onclick="carouselOnClick('./gallery_folders.html', this)" onmouseover="mouseOverSeeAll(this)"
+                onmouseout="mouseOffSeeAll(this)">
                 <div class="carousel-overlay">
-                  <p class="album-name">Video</p>
-                  <p class="picture-count" id="video-count"></p>
+                  <p class="album-name">See all albums</p>
+                  <div class="see-all-arrow">
+                    <p class="picture-count see-all-arrow-icon" id="see-all-arrow-icon"><i class="fa-solid fa-arrow-right-long"></i></p>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -115,7 +145,7 @@
       </div>
       <!-- Gallery collage -->
       <div class="row gallery-row">
-        <!-- Spacing div (Margin right) -->
+        <!-- Spacing div (Margin left) -->
         <div class="col-md-3"></div>
         <!-- Center gallery div -->
         <div class="col-md-6">
@@ -130,7 +160,7 @@
             </div>
           </div>
         </div>
-        <!-- Spacing div (Margin left) -->
+        <!-- Spacing div (Margin right) -->
         <div class="col-md-3"></div>
       </div>
 
@@ -148,7 +178,8 @@
           <div class="socials-footer">
             <a href="#" class="social-icon"><i class="fa-brands fa-facebook socials-link"></i></a>
             <a href="#" class="social-icon"><i class="fa-brands fa-twitter socials-link"></i></a>
-            <a href="https://www.instagram.com/jmedwayphotographyy/" class="social-icon" target="_blank"><i class="fa-brands fa-instagram socials-link"></i></a>
+            <a href="https://www.instagram.com/jmedwayphotographyy/" class="social-icon" target="_blank"><i
+                class="fa-brands fa-instagram socials-link"></i></a>
           </div>
         </div>
       </footer>

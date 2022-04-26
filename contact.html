@@ -27,6 +27,14 @@
     <!-- Fontawesome required -->
     <script src="https://kit.fontawesome.com/23196d1ae5.js" crossorigin="anonymous"></script>
 
+    <!-- EmailJS required -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("0jU2Lh9G0kKnNVQyT");
+        })();
+    </script>
+
     <!-- Google fonts API -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +43,29 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Red+Hat+Mono:wght@300&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
-    <title>Jessica Medway Photography</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description"
+        content="Jessica Medway. A student photographer at the University of Gloucestershire with a passion to show the beauty in people, one picture at a time.">
+
+    <meta property="og:type" content="portfolio">
+    <meta property="og:title" content="Jessica Medway Photography contact">
+    <meta property="og:description"
+        content="Jessica Medway. A student photographer at the University of Gloucestershire with a passion to show the beauty in people, one picture at a time.">
+
+    <meta property="og:site_name" content="Jessica Medway Photography">
+    <meta name="twitter:title" content="Jessica Medway Photography contact">
+    <meta name="twitter:description"
+        content="Jessica Medway. A student photographer at the University of Gloucestershire with a passion to show the beauty in people, one picture at a time.">
+
+    <meta name="author" content="Jessica Medway">
+    <meta name="keywords" content="photography, portfolio, Cheltenham, Warwick, Jessica Medway, Medway, student, University of Gloucestershire, Gloucestershire, photography services, 
+    photography studio, photographer, photography solutions, headshots, band photography, music photography, people photography, student photography, student photographer, 
+    film, portraits, portrait photography, headshot photography, friendly, Live music, live music, video, locations, Birmingham, affordable photography, affordable, cheap photography,
+    cheap, inexpensive photography, inexpensive, Photography Cheltenham, student photography Cheltenham">
+
+
+    <title>Jessica Medway Photography Contact</title>
 
 </head>
 
@@ -55,7 +85,7 @@
                                 <a class="nav-link nav-link-ltr" href="./index.html">Home</a>
                                 <a class="nav-link nav-link-ltr" href="./gallery.html">Gallery</a>
                                 <a class="nav-link nav-link-ltr" href="./about-me.html">About me</a>
-                                <a class="nav-link nav-link-ltr" href="./contact.html">Contact</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                                <a class="nav-link nav-link-ltr" href="./contact.html">Contact</a>
                             </div>
 
                         </div>
@@ -63,7 +93,8 @@
                             <div class="socials">
                                 <a href="#" class="social-icon"><i class="fa-brands fa-facebook socials-link"></i></a>
                                 <a href="#" class="social-icon"><i class="fa-brands fa-twitter socials-link"></i></a>
-                                <a href="https://www.instagram.com/jmedwayphotographyy/" class="social-icon" target="_blank"><i class="fa-brands fa-instagram socials-link"></i></a>
+                                <a href="https://www.instagram.com/jmedwayphotographyy/" class="social-icon"
+                                    target="_blank"><i class="fa-brands fa-instagram socials-link"></i></a>
                             </div>
                         </div>
                     </div>
@@ -81,7 +112,8 @@
                         </div>
                         <div class="contact-information-container">
                             <p class="email"><i class="fa-solid fa-envelope contact-icon"></i> medwayjess@gmail.com</p>
-                            <p class="instagram"><i class="fa-brands fa-instagram contact-icon"></i> jmedwayphotographyy</p>
+                            <p class="instagram"><i class="fa-brands fa-instagram contact-icon"></i> jmedwayphotographyy
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -89,13 +121,13 @@
             </div>
 
             <!-- Enquiry Information -->
-            
+
             <div class="row enquiry-container">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
                     <div class="center-enquiry-container">
                         <div class="title-container">
-                            <p class="title">... Or have an Enquiry?</p>
+                            <p class="title">Have an Enquiry?</p>
                         </div>
                         <div class="enquiry-para-container">
                             <p class="enquiry-para">Fill out the information below<br> and send me an enquiry!</p>
@@ -106,36 +138,37 @@
             </div>
 
             <!-- Enquiry Form -->
-            
+
             <div class="enquiry-form-container">
                 <div class="row input-container">
-                        <div class="col-xs-12">
-                            <div class="styled-input wide">
-                                <input type="text" required />
-                                <label>Name</label> 
-                            </div>
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <input id="enquiry-name" type="text" required />
+                            <label>Name</label>
                         </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="styled-input">
-                                <input type="text" required />
-                                <label>Email</label> 
-                            </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="styled-input">
+                            <input id="enquiry-email" type="text" required />
+                            <label>Email</label>
                         </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="styled-input" style="float:right;">
-                                <input type="text" required />
-                                <label>Phone Number</label> 
-                            </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="styled-input" style="float:right;">
+                            <input id="enquiry-location" type="text" required />
+                            <label>Location</label>
                         </div>
-                        <div class="col-xs-12">
-                            <div class="styled-input wide">
-                                <textarea required></textarea>
-                                <label>Message</label>
-                            </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <textarea id="enquiry-message" required></textarea>
+                            <label>Message</label>
                         </div>
-                        <div class="col-xs-12">
-                            <div class="btn-lrg submit-btn">Send Message</div>
-                        </div>
+                    </div>
+                    <div class="col-sx-12 validation-text" id="validation-text"></div>
+                    <div class="col-xs-12 submit-button-container">
+                        <div class="btn-lrg submit-btn" id="submit-btn">Send Message</div>
+                    </div>
                 </div>
             </div>
 
@@ -149,7 +182,8 @@
                     <div class="socials-footer">
                         <a href="#" class="social-icon"><i class="fa-brands fa-facebook socials-link"></i></a>
                         <a href="#" class="social-icon"><i class="fa-brands fa-twitter socials-link"></i></a>
-                        <a href="https://www.instagram.com/jmedwayphotographyy/" class="social-icon" target="_blank"><i class="fa-brands fa-instagram socials-link"></i></a>
+                        <a href="https://www.instagram.com/jmedwayphotographyy/" class="social-icon" target="_blank"><i
+                                class="fa-brands fa-instagram socials-link"></i></a>
                     </div>
                 </div>
             </footer>
@@ -159,6 +193,8 @@
     <!-- Scripts -->
     <!-- Use the jquery $ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Contact form JS -->
+    <script type="text/javascript" src="./scripts/contact_form.js"></script>
 </body>
 
 </html>

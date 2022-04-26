@@ -11,3 +11,15 @@ function carouselOnClick(link, element){
         window.location = link;
     }
 }
+
+function mouseOverSeeAll(element){
+    if($(element).attr('data-pos') == 0){
+        document.getElementById("see-all-arrow-icon").style.transform = "translate(90%)";
+    }
+}
+
+function mouseOffSeeAll(element){
+    if($(element).attr('data-pos') == 0){
+        document.getElementById("see-all-arrow-icon").style.transform = "none";
+    }
+}

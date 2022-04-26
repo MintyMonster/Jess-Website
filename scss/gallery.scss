@@ -214,6 +214,10 @@ serif;
         filter: brightness(85%);
     }
 
+    // &__item:hover .see-all-arrow-icon {
+    //     transform: translateX(90%);
+    // }
+
     &__item {
         display: flex;
         align-items: center;
@@ -248,11 +252,22 @@ serif;
             }
 
             .picture-count {
-                font-size: 1.3vw;
+                font-size: max(1.3vw, 5px);
                 margin-left: 5px;
                 margin-top: -1.5vw;
                 font-family: $font-tertiary;
                 text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+
+            .see-all-arrow {
+                width: 100%;
+                text-align: left;
+
+                .see-all-arrow-icon {
+                    font-size: 2vw;
+                    font-family: $font-tertiary;
+                    transition: 550ms;
+                }
             }
         }
 
@@ -285,7 +300,7 @@ serif;
         }
 
         &:nth-child(5) {
-            background-image: url(../Assets/Placeholders/istockphoto-936681148-612x612.jpg);
+            background-image: url(../Assets/Gallery/Live-Music_THE-CLAUSE_Birmingham_2021_6.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -364,7 +379,7 @@ serif;
                 color: $prim-white;
                 transition: 0.5s ease;
                 opacity: 0;
-                font-size: 4vw;
+                font-size: max(4vw, 20px);
                 padding: 0.5vw;
                 text-align: left;
                 font-weight: bolder;
@@ -373,36 +388,34 @@ serif;
                 height: 100%;
 
                 .band-name {
-                    font-size: 2vw;
+                    font-size: max(2vw, 15px);
                     margin-left: 0.1vw;
                     font-family: $font-primary;
 
-                    @media screen and (max-width: 375px) {
-                        font-size: 2.5vw;
-                    }
+                    // @media screen and (max-width: 375px) {
+                    //     font-size: 2.5vw;
+                    // }
                 }
 
                 .image-location {
-                    font-size: 1vw;
-                    margin-left: 0.9vw;
+                    font-size: max(1vw, 8px);
+                    margin-left: 0.7vw;
                     margin-top: -1.4vw;
                     font-family: $font-tertiary;
 
                     @media screen and (max-width: 375px) {
                         margin-top: -15px;
-                        font-size: 1.5vw;
                     }
                 }
 
                 .image-date {
-                    font-size: 0.9vw;
-                    margin-left: 0.9vw;
+                    font-size: max(0.9vw, 7px);
+                    margin-left: 0.7vw;
                     margin-top: -1vw;
                     font-family: $font-tertiary;
 
                     @media screen and (max-width: 375px) {
                         margin-top: -15px;
-                        font-size: 1.4vw;
                     }
                 }
             }

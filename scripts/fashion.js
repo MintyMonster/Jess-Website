@@ -24,7 +24,7 @@ $.ajax(settings).done((response) => {
       galleryElementOne.innerHTML += `
               <div class="image-container id="container-${i}" onclick="galleryOnClick(this)">
               <div class="image-information">
-                <p class="band-name"><i class="fa-solid fa-volume-low"></i> ${element.Name}</p>
+                <p class="band-name"><i class="fa-solid fa-camera"></i> ${element.Name}</p>
                 <p class="image-location"><i class="fa-solid fa-location-pin"></i> ${element.Location}</p>
                 <p class="image-date"><i class="fa-solid fa-calendar"></i> ${element.Year}</p>
               </div>
@@ -36,7 +36,7 @@ $.ajax(settings).done((response) => {
       galleryElementTwo.innerHTML += `
               <div class="image-container" id="container=${i}" onclick="galleryOnClick(this)">
               <div class="image-information">
-                <p class="band-name"><i class="fa-solid fa-volume-low"></i> ${element.Name}</p>
+                <p class="band-name"><i class="fa-solid fa-camera"></i> ${element.Name}</p>
                 <p class="image-location"><i class="fa-solid fa-location-pin"></i> ${element.Location}</p>
                 <p class="image-date"><i class="fa-solid fa-calendar"></i> ${element.Year}</p>
               </div>
