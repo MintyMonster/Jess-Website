@@ -22,7 +22,7 @@
         crossorigin="anonymous"></script>
 
     <!--- CSS -->
-    <link rel="stylesheet" href="./css/gallery_folders_page.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="./css/gallery_folders.css" type="text/css" media="screen">
 
     <!-- Fontawesome required -->
     <script src="https://kit.fontawesome.com/23196d1ae5.js" crossorigin="anonymous"></script>
@@ -41,22 +41,22 @@
         content="Jessica Medway. A student photographer at the University of Gloucestershire with a passion to show the beauty in people, one picture at a time.">
 
     <meta property="og:type" content="portfolio">
-    <meta property="og:title" content="Jessica Medway Photography Albums">
+    <meta property="og:title" content="Jessica Medway Photography Editorial">
     <meta property="og:description"
         content="Jessica Medway. A student photographer at the University of Gloucestershire with a passion to show the beauty in people, one picture at a time.">
 
     <meta property="og:site_name" content="Jessica Medway Photography">
-    <meta name="twitter:title" content="Jessica Medway Photography Albums">
+    <meta name="twitter:title" content="Jessica Medway Photography Editorial">
     <meta name="twitter:description"
         content="Jessica Medway. A student photographer at the University of Gloucestershire with a passion to show the beauty in people, one picture at a time.">
 
     <meta name="author" content="Jessica Medway">
     <meta name="keywords" content="photography, portfolio, Cheltenham, Warwick, Jessica Medway, Medway, student, University of Gloucestershire, Gloucestershire, photography services, 
-    photography studio, photographer, photography solutions, headshots, band photography, music photography, people photography, student photography, student photographer, 
-    film, portraits, portrait photography, headshot photography, friendly, Live music, live music, video, locations, Birmingham, affordable photography, affordable, cheap photography,
-    cheap, inexpensive photography, inexpensive, Photography Cheltenham, student photography Cheltenham">
+  photography studio, photographer, photography solutions, headshots, band photography, music photography, people photography, student photography, student photographer, 
+  film, portraits, portrait photography, headshot photography, friendly, Live music, live music, video, locations, Birmingham, affordable photography, affordable, cheap photography,
+  cheap, inexpensive photography, inexpensive, Photography Cheltenham, student photography Cheltenham">
 
-    <title>Jessica Medway Photography Albums</title>
+    <title>Jessica Medway Photography Editorial</title>
 
 </head>
 
@@ -94,83 +94,42 @@
 
 
             <div class="row title-contents">
-                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                </div>
                 <div class="col-md-6 place-content-center title-container">
-                    <p class="gallery-title">Albums</p>
+                    <p class="gallery-title">Editorial</p>
                 </div>
                 <div class="col-md-3"></div>
             </div>
 
-            <!-- Row one of Albums -->
-            <div class="row album-wrapper">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <!-- Album 1 -->
-                    <div class="album-cover-wrapper" onclick="folderClick('./portraits.html')">
-                        <div class="album-cover" id="portraits-cover">
-                            <div class="album-overlay">
-                                <p class="album-title">Portraits</p>
-                            </div>
+            <!-- Gallery collage -->
+            <div class="row gallery-row">
+                <!-- Spacing div (Margin right) -->
+                <div class="col-md-3"></div>
+                <!-- Center gallery div -->
+                <div class="col-md-6">
+                    <p class="nothing-to-see">Nothing to see here... yet :(</p>
+                    <!-- Holds all images -->
+                    <div class="image-row">
+                        <!-- Column 1 -->
+                        <div class="image-column" id="image-column-one">
+                            <!-- Div container to hold the image + image information -->
+                        </div>
+                        <div class="image-column" id="image-column-two">
+
                         </div>
                     </div>
-
-                    <!-- Album 2 -->
-                    <div class="album-cover-wrapper" onclick="folderClick('./live-music.html')">
-                        <div class="album-cover" id="live-music-cover">
-                            <div class="album-overlay">
-                                <p class="album-title">Live Music</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Album 3-->
-                    <div class="album-cover-wrapper" onclick="folderClick('./fashion.html')">
-                        <div class="album-cover" id="fashion-cover">
-                            <div class="album-overlay">
-                                <p class="album-title">Fashion</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-                <div class="col-md-2"></div>
+                <!-- Spacing div (Margin left) -->
+                <div class="col-md-3"></div>
             </div>
 
-            <!-- Row two of albums -->
-            <div class="row album-wrapper">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <!-- Album 1 -->
-                    <div class="album-cover-wrapper" onclick="folderClick('./film.html')">
-                        <div class="album-cover" id="film-cover">
-                            <div class="album-overlay">
-                                <p class="album-title">Film</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Album 2 -->
-                    <!-- <div class="album-cover-wrapper">
-                        <div class="album-cover" id="video-cover">
-                            <div class="album-overlay">
-                                <p class="album-title">Video</p>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- Album 3-->
-                    <div class="album-cover-wrapper" onclick="folderClick('./editorial.html')">
-                        <div class="album-cover" id="editorial-cover">
-                            <div class="album-overlay">
-                                <p class="album-title">Editorial</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-2"></div>
+            <!-- Popout image for gallery -->
+            <div id="modal" class="imageModal">
+                <span class="modal-close" onclick="modalClose(this)">&times;</span>
+                <img class="modal-content" id="modal-image">
+                <div id="modal-caption"></div>
             </div>
-
 
             <footer class="footer-container">
                 <div class="col-md-12 d-flex align-items-center copyright-container">
@@ -192,13 +151,11 @@
     <!-- Use the jquery $ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Gallery image filling -->
-    <script src="./scripts/video.js" type="text/javascript"></script>
+    <script src="./scripts/film.js" type="text/javascript"></script>
     <!-- Modal for image popout -->
     <script src="./scripts/modal.js" type="text/javascript" defer></script>
     <!-- Random scripts -->
     <script src="./scripts/random.js" type="text/javascript"></script>
-    <!-- Gallery folders scripts -->
-    <script src="./scripts/gallery_folders.js" type="text/javascript"></script>
 </body>
 
 </html>

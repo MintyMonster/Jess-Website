@@ -429,6 +429,27 @@ serif;
     }
 }
 
+// See more images link at bottom of page
+
+.see-more-images-footer-container {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    text-align: center;
+
+    .see-more-images-footer {
+        font-weight: bolder;
+        font-size: max(1.4vw, 10px);
+        text-decoration: none;
+        color: $prim-white;
+        font-family: $font-primary;
+        opacity: 0.7;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 // Image modal content
 
 .imageModal {
