@@ -58,7 +58,7 @@ $.ajax(settings).done((response) => {
       } else {
         toElem(galleryElementTwo, i, element.Name, element.Location, element.Year, element.Path);
       }
-    } else if(i == 27){
+    } else if (i == 27) {
       toElem(galleryElementTwo, i, element.Name, element.Location, element.Year, element.Path);
     }
 
