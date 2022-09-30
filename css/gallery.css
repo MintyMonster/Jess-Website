@@ -60,6 +60,11 @@
 }
 
 /* Navbar */
+.place-content-center {
+  display: grid;
+  place-content: center;
+}
+
 .logo-wrapper {
   display: flex;
   justify-content: center;
@@ -72,6 +77,7 @@
   margin-left: 1vw;
   overflow: hidden;
   min-width: 135px;
+  max-width: 350px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -79,12 +85,14 @@
 }
 
 .navbar-container {
-  margin-top: 2vw;
-  position: relative;
+  margin-top: 1vh;
+  width: 100vw;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .navbar .nav-link {
@@ -97,11 +105,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1vw;
+  padding: 1vh;
   margin: 0.1vw 0.1vw 0.1vw 0.1vw;
   opacity: 0.75;
   width: 8vw;
-  max-width: 170px;
+  max-width: 250px;
   min-width: 60px;
   text-align: center;
 }
@@ -137,10 +145,10 @@
 .socials .social-icon {
   transition: 600ms;
   font-weight: bold;
-  font-size: max(2vw, 14px);
+  font-size: max(1.5vw, 14px);
   color: rgb(255, 255, 255);
-  margin: 0.2vw 0.2vw 0.2vw 0.2vw;
-  padding: 0.1vw 0.1vw 0.1vw 1.2vw;
+  margin: 0.4vh 0.4vh 0.4vh 0.4vh;
+  padding: 0.1vh 0.1vh 0.1vh 1.2vh;
   opacity: 0.6;
 }
 .socials .social-icon:hover {
@@ -317,14 +325,14 @@
   height: 100%;
 }
 .gallery-row .image-row .image-column .image-information .band-name {
-  font-size: max(2vw, 15px);
-  margin-left: 0.1vw;
+  font-size: max(2vh, 15px);
+  margin-left: 0.1vh;
   font-family: "Roboto", sans-serif;
 }
 .gallery-row .image-row .image-column .image-information .image-location {
-  font-size: max(1vw, 8px);
-  margin-left: 0.7vw;
-  margin-top: -1.4vw;
+  font-size: max(1vh, 8px);
+  margin-left: 0.7vh;
+  margin-top: -1.4vh;
   font-family: "Red Hat Mono", monospace;
 }
 @media screen and (max-width: 375px) {
@@ -333,9 +341,9 @@
   }
 }
 .gallery-row .image-row .image-column .image-information .image-date {
-  font-size: max(0.9vw, 7px);
-  margin-left: 0.7vw;
-  margin-top: -1vw;
+  font-size: max(0.9vh, 7px);
+  margin-left: 0.7vh;
+  margin-top: -1vh;
   font-family: "Red Hat Mono", monospace;
 }
 @media screen and (max-width: 375px) {

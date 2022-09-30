@@ -22,6 +22,7 @@ serif;
 
 /* Navbar */
 
+
 .place-content-center {
     display: grid;
     place-content: center;
@@ -39,6 +40,7 @@ serif;
         margin-left: 1vw;
         overflow: hidden;
         min-width: 135px;
+        max-width: 350px;
 
         display: flex;
         justify-content: center;
@@ -48,12 +50,15 @@ serif;
 }
 
 .navbar-container {
-    margin-top: 2vw;
+    margin-top: 1vh;
+    width: 100vw;
     position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .navbar {
@@ -68,11 +73,11 @@ serif;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1vw;
+        padding: 1vh;
         margin: 0.1vw 0.1vw 0.1vw 0.1vw;
         opacity: 0.75;
         width: 8vw;
-        max-width: 170px;
+        max-width: 250px;
         min-width: 60px;
         text-align: center;
     }
@@ -115,10 +120,10 @@ serif;
     .social-icon {
         transition: 600ms;
         font-weight: bold;
-        font-size: max(2vw, 14px);
+        font-size: max(1.5vw, 14px);
         color: $prim-white;
-        margin: 0.2vw 0.2vw 0.2vw 0.2vw;
-        padding: 0.1vw 0.1vw 0.1vw 1.2vw;
+        margin: 0.4vh 0.4vh 0.4vh 0.4vh;
+        padding: 0.1vh 0.1vh 0.1vh 1.2vh;
         opacity: 0.60;
     }
 
@@ -154,7 +159,7 @@ serif;
                 font-weight: bolder;
                 text-align: center;
                 // 5.5
-                font-size: max(5.5vw, 30px);
+                font-size: max(4vw, 30px);
                 letter-spacing: 0.1vw;
                 margin-top: -4rem;
             }
@@ -162,8 +167,8 @@ serif;
             .banner-subtitle {
 
                 font-family: $font-tertiary;
-                font-size: max(1.5vw, 9px);
-                margin-top: -3vw;
+                font-size: max(1vw, 9px);
+                margin-top: -2vw;
                 margin-bottom: 5vw;
                 color: hsl(0, 0%, 95%);
                 font-weight: bolder;
