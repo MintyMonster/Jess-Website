@@ -6,59 +6,6 @@
 
 */
 /* Variables */
-/* Responsiveness */
-/* Main styles */
-.main {
-  background-color: rgba(0, 0, 0, 0.93);
-  height: 100%;
-}
-
-.page-container {
-  position: relative;
-  min-height: 100vh;
-}
-.page-container .content-wrap {
-  padding-bottom: 2.5rem;
-}
-
-/* Footer container */
-.footer-container {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2rem;
-}
-.footer-container .copyright-container {
-  font-size: max(1vw, 10px);
-  margin-top: 0.3vw;
-  color: rgba(255, 255, 255, 0.6);
-  opacity: 0.6;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.footer-container .socials-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.footer-container .socials-footer .social-icon {
-  transition: 600ms;
-  font-weight: bold;
-  font-size: max(1vw, 15px);
-  color: rgb(255, 255, 255);
-  margin: 0.1vw 0.1vw 0.1vw 0.1vw;
-  padding: 0.1vw 0.1vw 0.1vw 0.6vw;
-  opacity: 0.6;
-}
-.footer-container .socials-footer .social-icon:hover {
-  opacity: 1;
-}
-
 /* Navbar */
 .place-content-center {
   display: grid;
@@ -87,6 +34,7 @@
 .navbar-container {
   margin-top: 1vh;
   width: 100vw;
+  position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -156,26 +104,36 @@
   transform: scale(1.05);
 }
 
-.about-me-container {
-  width: 100%;
-  height: 750px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-}
-.about-me-container .about-me-area {
-  width: 70%;
-  height: 70%;
-  color: rgb(255, 255, 255);
+/* Banner */
+.main {
   font-family: "Roboto", sans-serif;
-  font-size: max(0.9vw, 10px);
+  background-color: black;
 }
-.about-me-container .about-me-area .about-me-headshot {
-  width: 450px;
-  height: 100%;
-  background: url("../Assets/Content/jess-headshot.jpg") center center/cover no-repeat;
-  margin-right: 1vh;
-  margin-bottom: 0vh;
-  float: left;
-}/*# sourceMappingURL=about-me.css.map */
+.main .head-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  height: 100vh;
+  background: url(../Assets/Content/banner.png) center center/cover no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+.main .head-banner .banner-content {
+  margin: auto;
+}
+.main .head-banner .banner-content .banner-title {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: max(4vw, 30px);
+  letter-spacing: 0.1vw;
+  margin-top: -4rem;
+}
+.main .head-banner .banner-content .banner-subtitle {
+  font-family: "Red Hat Mono", monospace;
+  font-size: max(1vw, 9px);
+  margin-top: -2vw;
+  margin-bottom: 5vw;
+  color: hsl(0deg, 0%, 95%);
+  font-weight: bolder;
+}/*# sourceMappingURL=index.css.map */

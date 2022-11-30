@@ -45,7 +45,7 @@ serif;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 2rem;
 
     .copyright-container {
         font-size: max(1vw, 10px);
@@ -191,6 +191,32 @@ serif;
     .social-icon:hover {
         opacity: 1;
         transform: scale(1.05);
+    }
+}
+
+.about-me-container {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    .about-me-area {
+        width: 70%;
+        height: 70%;
+        color: $prim-white;
+        font-family: $font-primary;
+        font-size: max(0.9vw, 10px);
+    
+        .about-me-headshot {
+            width: 450px;
+            height: 100%;
+            background: url("../Assets/Content/jess-headshot.jpg") center center/cover no-repeat;
+            margin-right: 1vh;
+            margin-bottom: 0vh;
+            float: left;
+        }
     }
 }
 

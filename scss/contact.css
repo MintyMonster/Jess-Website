@@ -1,0 +1,308 @@
+/*
+    Developer: Cameron Liddell A.K.A MintyMonster 
+    Github: https://github.com/MintyMonster
+    Instagram: https://www.instagram.com/cameronliddelldev/
+    Contact: cameronliddelldev@gmail.com
+
+*/
+/* Variables */
+/* Responsiveness */
+/* Main styles */
+.main {
+  background-color: rgba(0, 0, 0, 0.93);
+  height: 100%;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+.page-container .content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+/* Footer container */
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+.footer-container .copyright-container {
+  font-size: max(1vw, 10px);
+  margin-top: 0.3vw;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.6;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer-container .socials-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer-container .socials-footer .social-icon {
+  transition: 600ms;
+  font-weight: bold;
+  font-size: max(1vw, 15px);
+  color: rgb(255, 255, 255);
+  margin: 0.1vw 0.1vw 0.1vw 0.1vw;
+  padding: 0.1vw 0.1vw 0.1vw 0.6vw;
+  opacity: 0.6;
+}
+.footer-container .socials-footer .social-icon:hover {
+  opacity: 1;
+}
+
+/* Navbar */
+.place-content-center {
+  display: grid;
+  place-content: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.logo-wrapper .logo {
+  width: 16vw;
+  height: auto;
+  margin-left: 1vw;
+  overflow: hidden;
+  min-width: 135px;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.navbar-container {
+  margin-top: 1vh;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.navbar .nav-link {
+  font-weight: bold;
+  font-size: max(1vw, 8px);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh;
+  margin: 0.1vw 0.1vw 0.1vw 0.1vw;
+  opacity: 0.75;
+  width: 8vw;
+  max-width: 250px;
+  min-width: 60px;
+  text-align: center;
+}
+.navbar .nav-link:hover {
+  opacity: 1;
+  transition: 300ms;
+}
+.navbar .nav-link::before {
+  transition: 300ms;
+  height: 0.3vw;
+  min-height: 1.5px;
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+}
+.navbar .nav-link-ltr::before {
+  width: 8vw;
+  min-width: 40px;
+  bottom: 0.1vw;
+  opacity: 0;
+}
+.navbar .nav-link-ltr:hover::before {
+  bottom: 0.4vw;
+  opacity: 1;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.socials .social-icon {
+  transition: 600ms;
+  font-weight: bold;
+  font-size: max(1.5vw, 14px);
+  color: rgb(255, 255, 255);
+  margin: 0.4vh 0.4vh 0.4vh 0.4vh;
+  padding: 0.1vh 0.1vh 0.1vh 1.2vh;
+  opacity: 0.6;
+}
+.socials .social-icon:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.center-column .center-top-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 2vw;
+}
+.center-column .center-top-container .title-container {
+  width: 100%;
+  text-align: center;
+  font-size: max(2.2vw, 22px);
+  color: rgb(255, 255, 255);
+  opacity: 0.75;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.center-column .center-top-container .contact-information-container {
+  width: 100%;
+  text-align: center;
+  font-size: max(1.3vw, 10px);
+  color: rgb(255, 255, 255);
+  opacity: 0.4;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.enquiry-container .center-enquiry-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 2vw;
+}
+.enquiry-container .center-enquiry-container .title-container {
+  width: 100%;
+  text-align: center;
+  font-size: max(2.2vw, 22px);
+  color: rgb(255, 255, 255);
+  opacity: 0.75;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.enquiry-container .center-enquiry-container .enquiry-para-container {
+  width: 100%;
+  text-align: center;
+  font-size: max(1.3vw, 10px);
+  color: rgb(255, 255, 255);
+  opacity: 0.4;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.enquiry-form-container .input-container {
+  width: 650px;
+  max-width: 90%;
+  margin: 20px auto 25px auto;
+}
+.enquiry-form-container .input-container .submit-button-container {
+  text-align: center;
+}
+.enquiry-form-container .input-container .styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 768px) {
+  .enquiry-form-container .input-container .styled-input {
+    width: 100%;
+  }
+}
+.enquiry-form-container .input-container .styled-input label {
+  color: #999;
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+.enquiry-form-container .input-container .styled-input.wide {
+  width: 650px;
+  max-width: 100%;
+}
+.enquiry-form-container .input-container .styled-input input,
+.enquiry-form-container .input-container .styled-input textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 4px;
+}
+.enquiry-form-container .input-container .styled-input input:focus,
+.enquiry-form-container .input-container .styled-input textarea:focus {
+  outline: 0;
+}
+.enquiry-form-container .input-container .styled-input input:focus ~ span,
+.enquiry-form-container .input-container .styled-input textarea:focus ~ span {
+  width: 100%;
+  transition: all 0.075s ease;
+}
+.enquiry-form-container .input-container .styled-input textarea {
+  width: 100%;
+  min-height: 15em;
+}
+.enquiry-form-container .input-container .styled-input input:focus ~ label,
+.enquiry-form-container .input-container .styled-input textarea:focus ~ label,
+.enquiry-form-container .input-container .styled-input input:valid ~ label,
+.enquiry-form-container .input-container .styled-input textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  transition: all 0.225s ease;
+}
+.enquiry-form-container .input-container .styled-input input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+}
+.enquiry-form-container .input-container .styled-input input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+.enquiry-form-container .input-container .submit-btn {
+  padding: 7px 35px;
+  border-radius: 60px;
+  display: inline-block;
+  background-color: #4b8cfb;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
+  transition: all 300ms ease;
+}
+@media only screen and (max-width: 768px) {
+  .enquiry-form-container .input-container .submit-btn {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+.enquiry-form-container .input-container .submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+.enquiry-form-container .input-container .validation-text {
+  color: rgb(184, 40, 40);
+  font-size: small;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0.5vw;
+}/*# sourceMappingURL=contact.css.map */

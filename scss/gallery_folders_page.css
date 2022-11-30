@@ -200,153 +200,87 @@
   }
 }
 
-.gallery-row {
-  margin-top: 3vw;
-}
-.gallery-row .image-row {
-  display: -ms-flexbox;
+.album-wrapper {
+  margin-top: 2vw;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-.gallery-row .image-row .image-column {
-  -ms-flex: 50%;
-  flex: 50%;
-  padding: 0 0.1vw;
-}
-.gallery-row .image-row .image-column .gallery-image {
-  width: 100%;
-  vertical-align: middle;
-  transition: 200ms;
-}
-.gallery-row .image-row .image-column .image-container {
-  transition: 200ms;
-  position: relative;
-  margin-top: 0.2vw;
-  cursor: pointer;
-  overflow: hidden;
-}
-.gallery-row .image-row .image-column .image-information {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  color: rgb(255, 255, 255);
-  transition: 0.5s ease;
-  opacity: 0;
-  font-size: max(4vw, 20px);
-  padding: 0.5vw;
-  text-align: left;
-  font-weight: bolder;
-  font-family: "Roboto", sans-serif;
-  width: 100%;
-  height: 100%;
-}
-.gallery-row .image-row .image-column .image-information .band-name {
-  font-size: max(2vh, 15px);
-  margin-left: 0.1vh;
-  font-family: "Roboto", sans-serif;
-}
-.gallery-row .image-row .image-column .image-information .image-location {
-  font-size: max(1vh, 8px);
-  margin-left: 0.7vh;
-  margin-top: -1.4vh;
-  font-family: "Red Hat Mono", monospace;
-}
-@media screen and (max-width: 375px) {
-  .gallery-row .image-row .image-column .image-information .image-location {
-    margin-top: -15px;
-  }
-}
-.gallery-row .image-row .image-column .image-information .image-date {
-  font-size: max(0.9vh, 7px);
-  margin-left: 0.7vh;
-  margin-top: -1vh;
-  font-family: "Red Hat Mono", monospace;
-}
-@media screen and (max-width: 375px) {
-  .gallery-row .image-row .image-column .image-information .image-date {
-    margin-top: -15px;
-  }
-}
-.gallery-row .image-row .image-column .image-container:hover .image-information {
-  opacity: 1;
-}
-
-.imageModal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-}
-.imageModal .modal-content {
-  display: block;
-  width: 70vw;
-  max-width: 600px;
-  border: 0.4vw solid grey;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-@media only screen and (max-width: 700px) {
-  .imageModal .modal-content {
-    width: 70vw;
-  }
-}
-.imageModal #caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
   text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
 }
-.imageModal .modal-content,
-.imageModal #caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-.imageModal .modal-close {
-  position: absolute;
-  top: 1vw;
-  right: 5vw;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-.imageModal .modal-close:hover,
-.imageModal .modal-close:focus {
-  color: #bbb;
-  text-decoration: none;
+.album-wrapper .album-cover-wrapper {
+  width: 15vw;
+  height: 15vw;
   cursor: pointer;
+  transition: 300ms;
+  border-radius: 1vw;
+  display: inline-block;
+  margin-left: 1vw;
+}
+@media only screen and (max-width: 600px) {
+  .album-wrapper .album-cover-wrapper {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+.album-wrapper .album-cover-wrapper:hover {
+  transform: scale(1.05);
+}
+.album-wrapper .album-cover-wrapper .album-cover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.album-wrapper .album-cover-wrapper .album-cover .album-overlay {
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  height: 17%;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 0 0 1vw 1vw;
+  text-align: center;
+}
+.album-wrapper .album-cover-wrapper .album-cover .album-overlay .album-title {
+  font-size: max(1.5vw, 9px);
+  font-family: "Red Hat Mono", monospace;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+.album-wrapper .album-cover-wrapper #portraits-cover {
+  background-image: url(../Assets/Carousel/Jess_portrait_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 1vw;
+}
+.album-wrapper .album-cover-wrapper #fashion-cover {
+  background-image: url(../Assets/Gallery/Fashion_KUSTOMS_Leamington_2021_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 1vw;
+}
+.album-wrapper .album-cover-wrapper #live-music-cover {
+  background-image: url(../Assets/Gallery/Live-Music_THE-CLAUSE_Birmingham_2021_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 1vw;
+}
+.album-wrapper .album-cover-wrapper #film-cover {
+  background-image: url(../Assets/Gallery/Option_Film_Warwick_2019_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 1vw;
+}
+.album-wrapper .album-cover-wrapper #editorial-cover {
+  background-image: url(../Assets/Gallery/Option_Editorial_Birmingham_2019.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 1vw;
 }
 
 .nothing-to-see {
@@ -357,6 +291,4 @@
   margin-top: 3vw;
   color: rgb(255, 255, 255);
   opacity: 0.4;
-}
-
-/*# sourceMappingURL=gallery_folders.css.map */
+}/*# sourceMappingURL=gallery_folders_page.css.map */

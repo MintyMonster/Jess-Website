@@ -169,11 +169,11 @@
   height: 70%;
   color: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
-  font-size: max(0.9vw, 10px);
+  font-size: max(1vw, 10px);
 }
 .about-me-container .about-me-area .about-me-headshot {
   width: 450px;
-  height: 100%;
+  height: 300px;
   background: url("../Assets/Content/jess-headshot.jpg") center center/cover no-repeat;
   margin-right: 1vh;
   margin-bottom: 0vh;
